@@ -1,0 +1,119 @@
+/* style.css */
+
+body {
+    /* margin: 0; */
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #2f2f2f;
+    color: #2f2f2f;
+  }
+  
+  h1, h2 {
+    font-weight: 600;
+  }
+  
+  .container {
+    max-width: px;
+    margin: auto;
+  }
+  
+  /* Destaque */
+  .grid-destaque {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    background-color: #3a3a3a;
+    padding: 30px;
+    border-radius: 12px;
+  }
+  
+  .descricao h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .descricao ul {
+    padding-left: 20px;
+    color: #cccccc;
+    margin-bottom: 20px;
+  }
+  
+  .btn-saiba-mais {
+    background-color: #00b4d8;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .btn-saiba-mais:hover {
+    background-color: #0096b2;
+  }
+  
+  /* Sugestões */
+  .grid-sugestoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    text-align: center;
+    background-color: #3a3a3a;
+    padding: 30px;
+    border-radius: 12px;
+  }
+  
+  .grid-sugestoes img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .grid-sugestoes p {
+    color: #e0e0e0;
+    font-weight: 500;
+  }
+  
+  /* Avaliações */
+  .grid-avaliacoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    background-color: #3a3a3a;
+    padding: 30px;
+    border-radius: 12px;
+  }
+  
+  .card-avaliacao {
+    background-color: #ffffff;
+    color: #212529;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  .card-avaliacao .user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .stars {
+    margin-left: auto;
+    color: #ffc107;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .grid-destaque {
+      grid-template-columns: 1fr;
+    }
+  }
+  
