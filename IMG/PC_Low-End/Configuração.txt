@@ -1,0 +1,23 @@
+1 x Processador Intel Core i5-10400F, 6-Core, 12-Threads, 2.9Ghz (4.3Ghz Turbo), Cache 12MB, LGA1200;
+
+1 x Cooler Para Processador Hawin VC-120, 120mm, Preto;
+
+1 x Placa Mae Mancer H510M-DX, DDR4, LGA 1200, M-ATX;
+
+2 x Memoria Mancer Banshee, 8GB (1x8GB), DDR4, 3200MHz, C16;
+
+1 x SSD Pichau Rover S, 512GB, M.2 2280, PCIe NVMe, Leitura 3300MB/s, Gravacao 2000MB/s;
+
+1 x Placa de Video Mancer RTX 3060 Heimdall, 12GB, GDDR6;
+
+1 x Fonte Aigo Darkflash AT550, 550W, 80 Plus Bronze, Preto;
+
+1 x Gabinete Gamer Mancer CV300, Mid-Tower, Lateral de Vidro, Preto;
+
+1 x Monitor Gamer Mancer Horizon Z2, 23.8 Pol, VA, FHD, 100Hz, 1ms, HDMI/VGA;
+
+1 x Combo Gamer Pichau Netuno 4x1, Rainbow, Teclado ABNT2, Mouse 8000DPI, Mousepad Medio, Headset Drivers 50mm;
+
+1 x Kit Ventoinhas Aigo Darkflash CL12, Rainbow, 3x120mm, Preto.
+
+Cabo de Força e Cabo de Vídeo inclusos.

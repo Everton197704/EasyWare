@@ -1,0 +1,110 @@
+body{
+    background-color: #454647
+}
+.banner {
+    width: 100%;
+    aspect-ratio: 16 / 4;
+
+    padding: 5%;
+
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.titulo{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 5vw;
+}
+
+.subtitulo{
+    padding-top: 2%;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 2vw;
+}
+
+.planos-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+
+  .planos-container h2 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    margin-bottom: 30px;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+  }
+
+  .card {
+    background-color: #454647;
+    border-radius: 8px;
+    padding: 15px;
+    max-width: 300px;
+    flex: 1 1 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card img {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .botao {
+    background-color: #2d83a6;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  .botao:hover {
+    background-color: #2a7592;
+  }
+
+  @media (max-width: 768px) {
+    .cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .individual{
+
+  }
+
+  .titulocard{
+    color: white;
+    margin: 15px 0 10px 0;
+    font-size: 1.2rem;
+  }
+
+  .subcard{
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+
+  .valor{
+    color: white;
+    display: block;
+    margin-bottom: 15px;
+  }
