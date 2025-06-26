@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #3b3b3b;
+    color: white;
+  }
+  
+  .formulario {
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.2rem;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-weight: normal;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .linha {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .campo {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .campo-grande {
+    width: 100%;
+  }
+  
+  label {
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+  }
+  
+  input, select, textarea {
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+  }
+  
+  textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  .info-obrigatoria {
+    font-size: 0.7rem;
+    margin-bottom: 1rem;
+  }
+  
+  .rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .pagamento {
+    text-align: right;
+  }
+  
+  .pagamento p {
+    margin: 0 0 0.3rem 0;
+    font-weight: bold;
+  }
+  
+  .pagamento img {
+    height: 40px;
+  }
