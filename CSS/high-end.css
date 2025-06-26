@@ -18,6 +18,13 @@ h2 {
   color: #ffffff;
 }
 
+.linha-separadora {
+  border: none;
+  height: 1px;
+  background-color: #ccc; /* ou #bfbfbf, ou #ffffff com transparência */
+  margin: 40px 0;
+}
+
 .container {
   max-width: 1000px;
   margin: auto;
@@ -37,7 +44,7 @@ h2 {
 /* Destaque */
 .grid-destaque {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 3fr;
   gap: 40px;
   background-color: #828282;
   padding: 30px;
@@ -149,7 +156,7 @@ h2 {
 .grid-sugestoes {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+  gap: 40px;
   text-align: center;
   background-color: #828282;
   padding: 30px;
@@ -163,7 +170,7 @@ h2 {
 }
 
 .grid-sugestoes p {
-  color: #e0e0e0;
+  color: #ffffff;
   font-weight: 500;
 }
 
@@ -176,7 +183,7 @@ h2 {
 /* Avaliações */
 .grid-avaliacoes {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr 1fr));
   gap: 20px;
   background-color: #828282;
   padding: 30px;
@@ -205,7 +212,7 @@ h2 {
 }
 
 .stars {
-  margin-left: auto;
+  /* margin-left: auto; */
   color: #ffc107;
 }
 
