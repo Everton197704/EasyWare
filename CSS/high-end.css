@@ -1,173 +1,229 @@
 /* style.css */
-#fundo{
+#fundo {
   background-color: #454647;
 }
+
 body {
-    /* margin: auto; */
-    font-family: 'Segoe UI', sans-serif;
-    /* background-color: orangered; */ /* Esta linha é efetivamente sobrescrita por #fundo */
-    color: #2f2f2f;
+  /* margin: auto; */
+  font-family: 'Segoe UI', sans-serif;
+  /* background-color: orangered; */
+  /* Esta linha é efetivamente sobrescrita por #fundo */
+  color: #2f2f2f;
 
-  }
+}
 
-  h1, h2 {
-    font-weight: 600;
-    color: #ffffff;
-  }
+h1,
+h2 {
+  font-weight: 600;
+  color: #ffffff;
+}
 
-  .container {
-    max-width: 1000px;
-    margin: auto;
-    color: #ffffff;
-  }
+.container {
+  max-width: 1000px;
+  margin: auto;
+  color: #ffffff;
+}
 
-  /* Destaque */
-  .grid-destaque {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    background-color: #828282;
-    padding: 30px;
-    border-radius: 12px;
-  }
-
-  .mb-4 {
-    color:#ffffff ;
-    text-align: left;
-  }
-
-  .descricao h2 {
-    font-size: 18px;
-    margin-bottom: 15px;
-    color: #ffffff;
-  }
-
-
-  .descricao ul {
-    padding-left: 20px;
-    color: #ffffff;
-    margin-bottom: 20px;
-  }
-
-  .btn-saiba-mais {
-    background-color: #00b4d8;
-    border: none;
-    color: #fff;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: 0.3s ease;
-    display: inline-block; /* Garante que ele se comporte bem com o novo botão */
-    vertical-align: middle; /* Alinha verticalmente com o botão do WhatsApp */
-  }
-
-  .btn-saiba-mais:hover {
-    background-color: #0096b2;
-  }
-
-  /* Estilo para o novo botão do WhatsApp */
-  .btn-whatsapp {
-    background-color: #25D366; /* Verde do WhatsApp */
-    border: none;
-    padding: 10px; /* Torna-o quadrado para um círculo */
-    border-radius: 50%; /* Torna-o circular */
-    cursor: pointer;
-    transition: 0.3s ease;
-    display: inline-flex; /* Para alinhar o ícone */
-    align-items: center;
-    justify-content: center;
-    margin-left: 10px; /* Espaço entre os botões */
-    text-decoration: none; /* Remove sublinhado para tags <a> */
-    width: 45px; /* Largura e altura fixas para um círculo perfeito */
-    height: 45px;
-    vertical-align: middle; /* Alinha verticalmente com o outro botão */
-  }
-
-  .btn-whatsapp img {
-    width: 24px;
-    height: 24px;
-  }
-
-  .btn-whatsapp:hover {
-    background-color: #1DA851;
-  }
-
-
-  /* Sugestões */
-  .sugestoes .mb-4, .avaliacoes .mb-4 {
-    color: #ffffff; /* Garante que esses títulos sejam brancos */
-    
-  }
-
-  .grid-sugestoes {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-    text-align: center;
-    background-color: #828282;
-    padding: 30px;
-    border-radius: 12px;
-  }
-
-  .grid-sugestoes img {
-    max-width: 100%;
-    border-radius: 10px;
-    margin-bottom: 10px;
-  }
-
-  .grid-sugestoes p {
-    color: #e0e0e0;
-    font-weight: 500;
-  }
-
-  /* Avaliações */
-  .grid-avaliacoes {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    background-color: #828282;
-    padding: 30px;
-    border-radius: 12px;
-  }
-
-  .card-avaliacao {
-    background-color: #ffffff;
-    color: #212529;
-    padding: 15px;
-    border-radius: 10px;
-  }
-
-  .card-avaliacao .user {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
-  }
-
-  .avatar {
-    width: 35px;
-    height: 35px;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none; /* Remove o ícone padrão */
+    background-color: rgb(0, 0, 0); /* Adiciona fundo preto */
+    width: px;
+    height: 30px;
     border-radius: 50%;
-    object-fit: cover;
+}
+
+
+/* Destaque */
+.grid-destaque {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  background-color: #828282;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.mb-4 {
+  color: #ffffff;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 38px;
+
+}
+
+
+.descricao h2  {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600; /* SemiBold */
+}
+
+
+.descricao ul  {
+  padding-left: 20px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400; /* Regular */
+  font-size: 16px;
+}
+
+.descricao p {
+  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500; /* Medium */
+}
+
+.btn-saiba-mais {
+  background-color: #00b4d8;
+  border: none;
+  color: #fff;
+  /* font-weight: bold; */
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  display: inline-block;
+  /* Garante que ele se comporte bem com o novo botão */
+  vertical-align: middle;
+  /* Alinha verticalmente com o botão do WhatsApp */
+  font-family: 'Inter', sans-serif;
+  font-weight: 500; /* Medium */
+}
+
+.btn-saiba-mais:hover {
+  background-color: #0096b2;
+}
+
+/* Estilo para o novo botão do WhatsApp */
+.btn-whatsapp {
+  background-color: #828282;
+  /* Verde do WhatsApp */
+  border: none;
+  padding: 10px;
+  /* Torna-o quadrado para um círculo */
+  border-radius: 50%;
+  /* Torna-o circular */
+  cursor: pointer;
+  transition: 0.3s ease;
+  display: inline-flex;
+  /* Para alinhar o ícone */
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  /* Espaço entre os botões */
+  text-decoration: none;
+  /* Remove sublinhado para tags <a> */
+  width: 45px;
+  /* Largura e altura fixas para um círculo perfeito */
+  height: 45px;
+  vertical-align: middle;
+  /* Alinha verticalmente com o outro botão */
+}
+
+.btn-whatsapp img {
+  width: 24px;
+  height: 24px;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1DA851;
+}
+
+
+/* Sugestões */
+.sugestoes .mb-4,
+.avaliacoes .mb-4 {
+  color: #ffffff;
+  /* Garante que esses títulos sejam brancos */
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  
+}
+
+.grid-sugestoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  text-align: center;
+  background-color: #828282;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.grid-sugestoes img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.grid-sugestoes p {
+  color: #e0e0e0;
+  font-weight: 500;
+}
+
+.grid-sugestoes a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* Avaliações */
+.grid-avaliacoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  background-color: #828282;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.card-avaliacao {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.card-avaliacao .user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.stars {
+  margin-left: auto;
+  color: #ffc107;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .grid-destaque {
+    grid-template-columns: 1fr;
   }
 
-  .stars {
-    margin-left: auto;
-    color: #ffc107;
+  /* Adiciona um padding horizontal para telas menores */
+  .container {
+    padding: 0 15px;
   }
 
-  /* Responsivo */
-  @media (max-width: 768px) {
-    .grid-destaque {
-      grid-template-columns: 1fr;
-    }
-    /* Adiciona um padding horizontal para telas menores */
-    .container {
-        padding: 0 15px;
-    }
-    /* Reduz um pouco o padding das seções em telas menores */
-    .grid-destaque, .grid-sugestoes, .grid-avaliacoes {
-        padding: 20px;
-    }
+  /* Reduz um pouco o padding das seções em telas menores */
+  .grid-destaque,
+  .grid-sugestoes,
+  .grid-avaliacoes {
+    padding: 20px;
   }
+}
