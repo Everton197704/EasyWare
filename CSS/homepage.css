@@ -1,6 +1,30 @@
 body{
     background-color: #454647
 }
+
+header{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: #454647;
+  font-size: 1vw;
+  background-color: #d9d9d9;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    size: 20vw;
+    padding-left: 10%;
+  }
+}
+
+.navbar-brand img {
+  width: 10vw;
+  height: auto;
+  padding-left: 10%;
+}
+
 .banner {
     width: 100%;
     aspect-ratio: 16 / 4;
@@ -33,12 +57,15 @@ body{
 .planos-container {
   max-width: 1300px;
   margin: 0 auto;
+  padding-top: 2%;
+  padding-bottom: 5%;
 }
 
 .tituloPlanos{
   font-size: clamp(1.5rem, 4vw, 3rem);
   margin-bottom: 30px;
   color: white;
+  text-align: left;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
@@ -116,5 +143,199 @@ body{
   .cards {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+.produto-container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.produto-conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 20px;
+  padding-left: 15%;
+}
+
+.produto-texto {
+  flex: 1 1 500px;
+  color: #333;
+}
+
+.produto-texto h2 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  margin-bottom: 10px;
+}
+
+.produto-texto h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.produto-texto ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.produto-texto li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.botao-eu-quero {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.botao-eu-quero:hover {
+  background-color: #333;
+}
+
+.produto-imagem {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.produto-imagem img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .produto-conteudo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .produto-texto {
+    flex: 1 1 100%;
+  }
+  
+  .produto-imagem {
+    margin-top: 20px;
+  }
+}
+
+#footer-empresa {
+  display: grid;
+  grid-template-rows: 20% 60% 20%;
+  grid-template-columns: repeat(3, 30%);
+  background-color: #454647;
+  justify-items: center;
+  align-items: center;
+  height: 400px;
+  justify-content: center;
+}
+
+#footer-empresa h3, p {
+  color: white;
+}
+
+#footer-empresa h3{
+  align-self: end;
+}
+
+#item-1 {
+  padding: 0 40px;
+}
+
+#item-2 img {
+  height: 70px;
+  padding: 10px 0;
+}
+
+#item-3 {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 50%);
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+#item-3 h3 {
+  grid-column: 1 / 4;
+}
+
+#item-3 img {
+  height: 45px;
+  width: 45px;
+}
+
+#item-4{
+  grid-column: 1 / 3;
+  display: flex;
+  width: 90%;
+  align-items: center;
+  gap: 20px;
+}
+
+#item-4 img{
+  height: 45px;
+  width: 45px;
+}
+
+@media(max-width: 722px) {
+  #footer-empresa {
+      display: grid;
+      grid-template-rows: 60px 300px 40px 200px 40px 100px;
+      grid-template-columns: auto;
+      background-color: #454647;
+      justify-items: center;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      row-gap: 20px;
+  }
+
+  #titulo-sobre{
+      grid-column: 1 / 2;
+      align-self: end;
+  }
+
+  #item-1{
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      font-size: 1.3em;
+  }
+
+  #titulo-parceria{
+      grid-row: 3 / 4;
+  }
+
+  #item-2{
+      grid-row: 4 / 5;
+  }
+
+  #titulo-Contato{
+      grid-row: 5 / 6;
+  }
+
+  #item-3{
+      grid-row: 6 / 7;
+  }
+
+  #item-4{
+      grid-row: 7 / 7;        
+  }
+
+  #item-1 p{
+      color: white;
+      font-size: 0.8em;
   }
 }
