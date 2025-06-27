@@ -13,55 +13,6 @@ body {
     color: #131212;
 }
 
-/* HEADER RESPONSIVO */
-header {
-    background-color: #808080;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    flex-wrap: wrap;
-}
-
-.logo {
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-nav a {
-    color: rgb(226, 211, 211);
-    text-decoration: none;
-    font-weight: bold;
-    padding: 0.5rem;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: white;
-}
-
-.login-btn {
-    background-color: #555;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.login-btn:hover {
-    background-color: #666;
-}
-
 /* SEÇÃO SOBRE RESPONSIVA */
 .sobre {
     background-color: #474545;
@@ -71,11 +22,21 @@ nav a:hover {
 }
 
 .sobre h1 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+
     font-size: 2.5rem;
     margin-bottom: 2rem;
 }
 
 .sobre p {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+
     font-size: 1.1rem;
     line-height: 1.6;
     max-width: 1000px;
@@ -105,11 +66,21 @@ nav a:hover {
 }
 
 .imgPai .text h2 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+
     font-size: 2.2rem;
     margin-bottom: 1.5rem;
 }
 
 .imgPai .text p {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 1rem;
@@ -142,6 +113,11 @@ nav a:hover {
 }
 
 .card.azul h3 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+
     grid-column: 1;
     grid-row: 1;
     font-size: 2rem;
@@ -159,6 +135,11 @@ nav a:hover {
 }
 
 .card.azul li {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
     line-height: 1.4;
@@ -228,6 +209,11 @@ nav a:hover {
 }
 
 .card.cinza .text h3 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+
     font-size: 2.2rem;
     font-weight: bold;
     margin: 0 0 1.5rem 0;
@@ -236,6 +222,11 @@ nav a:hover {
 }
 
 .card.cinza .text p {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    
     font-size: 1rem;
     line-height: 1.5;
     margin: 0 0 2rem 0;
@@ -273,25 +264,6 @@ nav a:hover {
     display: block;
 }
 
-/* FOOTER RESPONSIVO */
-footer {
-    background-color: #3a3a3a;
-    color: white;
-    text-align: center;
-    padding: 2rem 1rem;
-    font-size: 0.9rem;
-}
-
-footer .logo {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-}
-
-footer p {
-    margin: 0.5rem 0;
-    line-height: 1.4;
-}
-
 /* MEDIA QUERIES PARA RESPONSIVIDADE */
 
 /* Tablets */
@@ -316,17 +288,7 @@ footer p {
 
 /* Mobile */
 @media (max-width: 768px) {
-    /* Header mobile */
-    header {
-        flex-direction: column;
-        gap: 1rem;
-        padding: 1rem;
-    }
-    
-    nav ul {
-        justify-content: center;
-    }
-    
+
     /* Sobre mobile */
     .sobre {
         padding: 2rem 1rem;
@@ -415,13 +377,6 @@ footer p {
     .card.cinza .img {
         min-height: 200px;
     }
-    
-    /* Footer mobile */
-    footer {
-        padding: 1.5rem 1rem;
-        font-size: 0.8rem;
-    }
-}
 
 /* Mobile pequeno */
 @media (max-width: 480px) {
@@ -442,4 +397,5 @@ footer p {
         flex-direction: column;
         gap: 0.5rem;
     }
+}
 }
