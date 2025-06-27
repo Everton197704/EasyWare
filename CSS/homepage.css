@@ -1,6 +1,20 @@
 body{
-    background-color: #454647
+    background-color: #454647;
+    padding-top: 5%;
 }
+
+@media (max-width: 772px) {
+  body{
+    padding-top: 15%;
+  }
+}
+
+@media (max-width: 330px) {
+  body{
+    padding-top: 18%;
+  }
+}
+
 
 .banner {
     width: 100%;
@@ -52,8 +66,8 @@ body{
 .cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
-  justify-content: center;
+  gap: 4vw;
+  justify-content: space-around;
   text-align: center;
 }
 
@@ -180,13 +194,14 @@ body{
 }
 
 .produto-imagem {
-  flex: 1 1 400px;
+  flex: 1 1 500px;
   text-align: center;
+  padding-right: 20%;
 }
 
 .produto-imagem img {
-  width: 100%;
-  max-width: 450px;
+  width: 150%;
+  max-width: 500px;
   height: auto;
   object-fit: contain;
 }
