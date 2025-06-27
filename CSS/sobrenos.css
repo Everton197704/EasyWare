@@ -1,10 +1,10 @@
 #fundo{
     background-color: #808080;
+    padding-top: 5%;
 }
 
 *{
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -292,6 +292,7 @@ body {
     /* Sobre mobile */
     .sobre {
         padding: 2rem 1rem;
+        padding-top: 12%;
     }
     
     .sobre h1 {
@@ -380,6 +381,10 @@ body {
 
 /* Mobile pequeno */
 @media (max-width: 480px) {
+    .sobre {
+        padding-top: 17%;
+    }
+
     .sobre h1 {
         font-size: 1.5rem;
     }
@@ -393,9 +398,5 @@ body {
         font-size: 1.4rem;
     }
     
-    nav ul {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
 }
 }
