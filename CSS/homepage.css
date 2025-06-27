@@ -194,19 +194,18 @@ body{
 }
 
 .produto-imagem {
-  flex: 1 1 500px;
+  flex: 1 1 300px;
   text-align: center;
-  padding-right: 20%;
 }
 
 .produto-imagem img {
-  width: 150%;
+  width: 100%;
   max-width: 500px;
   height: auto;
   object-fit: contain;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 772px) {
   .produto-conteudo {
     flex-direction: column;
     align-items: center;
@@ -218,7 +217,6 @@ body{
   }
   
   .produto-imagem {
-    margin-top: 20px;
+    margin-top: 10%;
   }
 }
-
