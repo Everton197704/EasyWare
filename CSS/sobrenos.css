@@ -145,25 +145,27 @@ body {
     line-height: 1.4;
 }
 
-.card.azul button {
+.botao-visitar {
     grid-column: 1;
     grid-row: 3;
     background-color: #3a3a3a;
-    color: white;
-    border: none;
     padding: 0.8rem 1.5rem;
+    color: #fff;
+    text-decoration: none;
     border-radius: 6px;
     font-size: 1rem;
-    cursor: pointer;
+    text-align: center;
     justify-self: start;
     align-self: start;
     margin: 1rem 0 2rem 2rem;
+    cursor: pointer;
+    font-weight: normal;
     transition: background-color 0.3s ease;
-}
-
-.card.azul button:hover {
+  }
+  
+  .botao-visitar:hover {
     background-color: #2a2a2a;
-}
+  }
 
 .card.azul .img {
     grid-column: 2;
@@ -233,22 +235,23 @@ body {
     color: white;
 }
 
-.card.cinza .text button {
+.botao-explorar {
+    display: inline-block;
     background-color: #4a9eca;
-    color: white;
+    color: #fff;
     border: none;
     padding: 0.8rem 1.5rem;
+    text-decoration: none;
     border-radius: 6px;
     font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
+    text-align: center;
     align-self: flex-start;
-    transition: background-color 0.3s ease;
-}
-
-.card.cinza .text button:hover {
+    cursor: pointer;
+  }
+  
+  .botao-explorar:hover {
     background-color: #3a8bb0;
-}
+  }
 
 .card.cinza .img {
     flex: 1;
