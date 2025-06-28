@@ -47,7 +47,7 @@ h2 {
   display: grid;
   grid-template-columns: 2fr 3fr;
   gap: 40px;
-  background-color: #828282;
+  background-color: #555;
   padding: 30px;
   border-radius: 12px;
 }
@@ -140,7 +140,7 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 40px;
   text-align: center;
-  background-color: #828282;
+  background-color: #555;
   padding: 30px;
   border-radius: 12px;
 }
@@ -167,7 +167,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr 1fr));
   gap: 20px;
-  background-color: #828282;
+  background-color: #555;
   padding: 30px;
   border-radius: 12px;
 }
