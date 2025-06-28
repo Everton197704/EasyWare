@@ -1,6 +1,7 @@
 /* style.css */
 #fundo {
   background-color: #454647;
+  padding-top: 10%;
 }
 
 body {
@@ -202,6 +203,13 @@ h2 {
   .grid-destaque {
     grid-template-columns: 1fr;
   }
+
+  @media (max-width: 330px) {
+  #fundo {
+    padding-top: 20%;
+  }
+}
+  
 
   /* Adiciona um padding horizontal para telas menores */
   .container {
