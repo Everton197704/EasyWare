@@ -1,0 +1,405 @@
+#fundo{
+    background-color: #808080;
+    padding-top: 5%;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #131212;
+}
+
+/* SEÇÃO SOBRE RESPONSIVA */
+.sobre {
+    background-color: #474545;
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.sobre h1 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.sobre p {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* SEÇÃO IMGPAI RESPONSIVA */
+.imgPai {
+    background-image: url(/IMG/Sobre\ Nos\ 1\ -\ Background.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 4rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+}
+
+.imgPai .text {
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 800px;
+    text-align: center;
+}
+
+.imgPai .text h2 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.imgPai .text p {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.imgPai .img {
+    display: none; /* Esconder a imagem separada já que está no background */
+}
+
+/* SEÇÃO CURSOS RESPONSIVA */
+.cursos {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #555555;
+}
+
+.card.azul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1100px;
+    background-color: #4a9eca;
+    color: white;
+    min-height: 300px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card.azul h3 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 2rem;
+    margin: 0;
+    padding: 2rem 1rem 1rem 2rem;
+    align-self: end;
+}
+
+.card.azul ul {
+    grid-column: 1;
+    grid-row: 2;
+    list-style: none;
+    padding: 0 1rem 0 2rem;
+    margin: 0;
+}
+
+.card.azul li {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.botao-visitar {
+    grid-column: 1;
+    grid-row: 3;
+    background-color: #3a3a3a;
+    padding: 0.8rem 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    text-align: center;
+    justify-self: start;
+    align-self: start;
+    margin: 1rem 0 2rem 2rem;
+    cursor: pointer;
+    font-weight: normal;
+    transition: background-color 0.3s ease;
+  }
+  
+  .botao-visitar:hover {
+    background-color: #2a2a2a;
+  }
+
+.card.azul .img {
+    grid-column: 2;
+    grid-row: 1 / -1;
+    display: flex;
+    align-items: center;
+}
+
+.card.azul .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* SEÇÃO TEAM RESPONSIVA */
+.team {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #555555;
+}
+
+.card.cinza {
+    display: flex;
+    align-items: stretch;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1100px;
+    background: linear-gradient(135deg, #4a4a4a 0%, #3a3a3a 100%);
+    color: white;
+    min-height: 300px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card.cinza .text {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card.cinza .text h3 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin: 0 0 1.5rem 0;
+    color: white;
+    line-height: 1.2;
+}
+
+.card.cinza .text p {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0 0 2rem 0;
+    color: white;
+}
+
+.botao-explorar {
+    display: inline-block;
+    background-color: #4a9eca;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    text-align: center;
+    align-self: flex-start;
+    cursor: pointer;
+  }
+  
+  .botao-explorar:hover {
+    background-color: #3a8bb0;
+  }
+
+.card.cinza .img {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card.cinza .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* MEDIA QUERIES PARA RESPONSIVIDADE */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .sobre {
+        padding: 3rem 1.5rem;
+    }
+    
+    .sobre h1 {
+        font-size: 2.2rem;
+    }
+    
+    .imgPai {
+        background-attachment: scroll;
+        min-height: 400px;
+    }
+    
+    .imgPai .text h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    /* Sobre mobile */
+    .sobre {
+        padding: 2rem 1rem;
+        padding-top: 12%;
+    }
+    
+    .sobre h1 {
+        font-size: 1.8rem;
+    }
+    
+    .sobre p {
+        font-size: 1rem;
+    }
+    
+    /* ImgPai mobile */
+    .imgPai {
+        padding: 2rem 1rem;
+        min-height: 300px;
+    }
+    
+    .imgPai .text {
+        padding: 1.5rem;
+    }
+    
+    .imgPai .text h2 {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+    
+    .imgPai .text p {
+        font-size: 0.9rem;
+    }
+    
+    /* Cards mobile */
+    .cursos, .team {
+        padding: 1rem;
+    }
+    
+    .card.azul {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+    
+    .card.azul h3 {
+        grid-column: 1;
+        grid-row: 1;
+        padding: 1.5rem 1rem 1rem 1rem;
+        font-size: 1.6rem;
+    }
+    
+    .card.azul ul {
+        grid-column: 1;
+        grid-row: 2;
+        padding: 0 1rem;
+    }
+    
+    .card.azul button {
+        grid-column: 1;
+        grid-row: 3;
+        margin: 1rem;
+    }
+    
+    .card.azul .img {
+        grid-column: 1;
+        grid-row: 4;
+        min-height: 200px;
+    }
+    
+    .card.cinza {
+        flex-direction: column;
+        min-height: auto;
+    }
+    
+    .card.cinza .text {
+        padding: 1.5rem;
+    }
+    
+    .card.cinza .text h3 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    
+    .card.cinza .text p {
+        margin-bottom: 1.5rem;
+    }
+    
+    .card.cinza .img {
+        min-height: 200px;
+    }
+
+/* Mobile pequeno */
+@media (max-width: 480px) {
+    .sobre {
+        padding-top: 17%;
+    }
+
+    .sobre h1 {
+        font-size: 1.5rem;
+    }
+    
+    .imgPai .text h2 {
+        font-size: 1.4rem;
+    }
+    
+    .card.azul h3,
+    .card.cinza .text h3 {
+        font-size: 1.4rem;
+    }
+    
+}
+}

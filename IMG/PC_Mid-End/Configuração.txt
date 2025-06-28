@@ -1,0 +1,21 @@
+1 x Processador Intel Core I5-13400F, 10-Core, 16-Threads, 2.5GHz (4.6GHz Turbo), Cache 20MB, LGA1700;
+
+1 x Cooler Para Processador Pichau Sage C2, ARGB, 92mm;
+
+1 x Placa Mae Pichau Alphard H610M-TSC, DDR4, LGA1700, M-ATX, Chipset Intel H610;
+
+2 x Memoria Mancer Banshee, 8GB (1x8GB), DDR4, 3200MHz, C16;
+
+1 x SSD Pichau Rover S, 512GB, M.2 2280, PCIe NVMe, Leitura 3300MB/s, Gravacao 2000MB/s;
+
+1 x Placa de Video MSI GeForce RTX 4060 Ventus 2X Black OC, 8GB, GDDR6, 128-bit;
+
+1 x Fonte Mancer Thunder 600W 80 Plus Bronze;
+
+1 x Gabinete Gamer Pichau Apus RGB, Mid-Tower, Lateral de Vidro Temperado, Com 3 Fans, Preto;
+
+1 x Monitor Gamer Mancer Horizon Z PRO, 27 Pol. VA, FHD, 1ms, 165Hz, FreeSync, HDMI/DP;
+
+1 x Combo Gamer Pichau Netuno 4x1, Rainbow, Teclado ABNT2, Mouse 8000DPI, Mousepad Medio, Headset Drivers 50mm;
+
+Cabo de Força e Cabo de Vídeo inclusos.
