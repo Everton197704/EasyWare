@@ -85,60 +85,41 @@ h2 {
   font-weight: 500; /* Medium */
 }
 
-.btn-saiba-mais {
-  background-color: #00b4d8;
-  border: none;
-  color: #fff;
-  /* font-weight: bold; */
-  padding: 10px 20px;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: 0.3s ease;
-  display: inline-block;
-  /* Garante que ele se comporte bem com o novo botão */
-  vertical-align: middle;
-  /* Alinha verticalmente com o botão do WhatsApp */
-  font-family: 'Inter', sans-serif;
-  font-weight: 500; /* Medium */
-}
 
-.btn-saiba-mais:hover {
-  background-color: #0096b2;
-}
 
 /* Estilo para o novo botão do WhatsApp */
-.btn-whatsapp {
-  background-color: #828282;
-  /* Verde do WhatsApp */
-  border: none;
-  padding: 10px;
-  /* Torna-o quadrado para um círculo */
-  border-radius: 50%;
-  /* Torna-o circular */
-  cursor: pointer;
-  transition: 0.3s ease;
+.botao-whatsapp {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.2rem;
+  text-decoration: none;
+
   display: inline-flex;
-  /* Para alinhar o ícone */
   align-items: center;
   justify-content: center;
-  margin-left: 10px;
-  /* Espaço entre os botões */
-  text-decoration: none;
-  /* Remove sublinhado para tags <a> */
-  width: 45px;
-  /* Largura e altura fixas para um círculo perfeito */
-  height: 45px;
   vertical-align: middle;
-  /* Alinha verticalmente com o outro botão */
+  display: inline-block;
+
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #2d83a6;
+  color: #fff;
+
+  cursor: pointer;
+  gap: 10px;
+  transition: 0.3s ease;
 }
 
-.btn-whatsapp img {
-  width: 24px;
-  height: 24px;
+.botao-whatsapp:hover {
+  background-color: #22738a;
 }
 
-.btn-whatsapp:hover {
-  background-color: #1DA851;
+.icone-whatsapp {
+  width: 35px;
+  height: auto;
 }
 
 
