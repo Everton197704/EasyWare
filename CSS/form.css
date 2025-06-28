@@ -61,42 +61,54 @@ body {
     height: 100px;
     resize: none;
   }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
   
-  button {
-    background-color: #3498db;
-    color: white;
+  .lado-esquerdo,
+  .lado-direito {
+    flex: 1 1 300px;
+  }
+  
+  .botao-whatsapp {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1rem;
+    text-decoration: none;
+  
     border: none;
     padding: 0.8rem 1.5rem;
     border-radius: 5px;
-    font-size: 1rem;
+    background-color: #2d83a6;
+    color: #fff;
+
     cursor: pointer;
+    transition: 0.3s ease;
   }
   
-  button:hover {
-    background-color: #2980b9;
+  .botao-whatsapp:hover {
+    background-color: #22738a;
   }
   
+
   .info-obrigatoria {
     font-size: 0.7rem;
     margin-bottom: 1rem;
   }
   
-  .rodape {
+  .pagamentos {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
+    align-items: center;
   }
+
+.pagamento{
   
-  .pagamento {
-    text-align: right;
-  }
-  
-  .pagamento p {
-    margin: 0 0 0.3rem 0;
-    font-weight: bold;
-  }
-  
-  .pagamento img {
-    height: 40px;
-  }
+}
