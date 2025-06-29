@@ -28,7 +28,9 @@ body {
   flex-direction: column;
   justify-content: center;
   gap: 40px;
+  font-size: 15px;
 }
+
 
 .box {
   background-color: #fff;
