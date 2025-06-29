@@ -6,21 +6,24 @@
   
 }
 
+#fundo {
+  background-color: #454647;
+}
+
 body {
   height: 100vh;
-  background-color: #555;
 }
 
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 100vh;
+  height: 100v;
 }
 
 /* Lado esquerdo - formulários */
 .form-area {
-  background-color: #2a7c9f;
-  padding: 40px 20px;
+  background-color: #4a9eca;
+  padding: 80px 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
