@@ -1,87 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulário de Orçamento</title>
+
   <link rel="stylesheet" href="/CSS/form.css">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
-  <section class="formulario">
-    <h1>Se interessou nos nossos dispositivos?</h1>
-    <h2>Preencha o formulário abaixo e faça o seu orçamento!</h2>
 
-    <form>
-      <div class="linha">
-        <div class="campo">
-          <label>*Nome do Responsável</label>
-          <input type="text" placeholder="Insira o nome">
-        </div>
-        <div class="campo">
-          <label>*Pessoa Física ou Jurídica?</label>
-          <select>
-            <option>Inserir resposta</option>
-          </select>
-        </div>
+  <div class="container">
+    <h2>Se interessou nos nossos dispositivos? <br> Preencha o formulário abaixo e faça o seu orçamento!</h2>
+
+    <form id="orcamentoForm">
+      <div class="col-50">
+        <label>*Nome do Responsável</label>
+        <input type="text" required>
+      </div>
+      <div class="col-50">
+        <label>*Pessoa Física ou Jurídica?</label>
+        <select required>
+          <option value="">Inserir resposta</option>
+          <option value="Física">Pessoa Física</option>
+          <option value="Jurídica">Pessoa Jurídica</option>
+        </select>
       </div>
 
-      <div class="linha">
-        <div class="campo">
-          <label>*E-mail</label>
-          <input type="email" placeholder="Insira o E-mail">
-        </div>
-        <div class="campo">
-          <label>*Telefone</label>
-          <input type="text" placeholder="Insira o telefone">
-        </div>
+      <div class="col-50">
+        <label>*E-mail</label>
+        <input type="email" required>
+      </div>
+      <div class="col-50">
+        <label>*Telefone</label>
+        <input type="tel" required>
       </div>
 
-      <div class="linha">
-        <div class="campo">
-          <label>*Dispositivo</label>
-          <select>
-            <option>Selecione o dispositivo</option>
-          </select>
-        </div>
-        <div class="campo">
-          <label>*Qtd Solicitada</label>
-          <select>
-            <option>Selecione a quantidade</option>
-          </select>
-        </div>
-        <div class="campo">
-          <label>*Pacote desejado</label>
-          <select>
-            <option>Selecione o pacote</option>
-          </select>
-        </div>
+      <div class="col-50">
+        <label>*Dispositivo</label>
+        <select required>
+          <option value="">Selecione o dispositivo</option>
+          <option value=""></option>
+        </select>
+      </div>
+      <div class="col-50">
+        <label>*Qtd Solicitada</label>
+        <input type="number" required>
       </div>
 
-      <div class="linha">
-        <div class="campo campo-grande">
-          <label>Observação</label>
-          <textarea placeholder="Insira uma observação..."></textarea>
-        </div>
+      <div class="col-50">
+        <label>*Pacote desejado</label>
+        <select required>
+          <option value="">Selecione o pacote</option>
+        </select>
+      </div>
+
+      <div style="flex: 1 1 100%;">
+        <label>Observação</label>
+        <textarea placeholder="Insira uma observação..."></textarea>
       </div>
 
 
-      <div class="container">
-        <div class="lado-esquerdo">
-          <p class="info-obrigatoria">*Informações obrigatórias</p>
-
-          <a href="#" class="botao-whatsapp" target="_blank" rel="">
-            Solicitar orçamento
-          </a>
+      <div class="acoes">
+        <div>
+          <button type="submit" class="btn" class="butt">Solicitar orçamento</button>
+  </form>
         </div>
 
-        <div class="lado-direito">
-          <img src="./IMG/Forms/FormaPagamento.png" alt="Formas de pagamento" class="pagamento">
-          </div>
+        <div class="pagamento">
+          <img src="./IMG/Forms/FormaPagamento.png" alt="Formas de Pagamento" style="max-width: 200px;" class="formpag">
         </div>
-      
       </div>
-      </div>
-    </form>
-  </section>
+
+  <div class="popup" id="popup">
+    <img src="/mnt/data/PopUp.png" alt="Orçamento Solicitado">
+  </div>
+
+  <script src="JS/form.js"></script>
 </body>
+
 </html>
