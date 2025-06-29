@@ -7,80 +7,109 @@
   <title>Formulário de Orçamento</title>
 
   <link rel="stylesheet" href="/CSS/form.css">
+  <link rel="stylesheet" href="./CSS/headfoot.css">
 
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
 
 <body>
 
-<header>
-
-</header>
-
-  <div class="container">
-    <h2>Se interessou nos nossos dispositivos? <br> Preencha o formulário abaixo e faça o seu orçamento!</h2>
-
-    <form id="orcamentoForm">
-      <div class="col-50">
-        <label>*Nome do Responsável</label>
-        <input type="text" required>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./homepage.html"><img src="./IMG/Logo/LogoCinza_pqn.png"
+            alt="Logo da empresa"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav d-flex justify-content-around" style="width: 45%;">
+            <li class="nav-item" id="itemhome">
+              <a class="nav-link" aria-current="page" href="./homepage.html">Home</a>
+            </li>
+            <li class="nav-item" id="itemhome">
+              <a class="nav-link" href="./high-end.html">Dispositivos</a>
+            </li>
+            <li class="nav-item" id="itemhome">
+              <a class="nav-link" href="./sobrenos.html">Easy Learnig</a>
+            </li>
+          </ul>
+          <a href="./login.html" class="btn bg-secondary" id="itemhome">Login</a>
+        </div>
       </div>
-      <div class="col-50">
-        <label>*Pessoa Física ou Jurídica?</label>
-        <select required>
-          <option value="">Inserir resposta</option>
-          <option value="Física">Pessoa Física</option>
-          <option value="Jurídica">Pessoa Jurídica</option>
-        </select>
-      </div>
+    </nav>
+  </header>
 
-      <div class="col-50">
-        <label>*E-mail</label>
-        <input type="email" required>
-      </div>
-      <div class="col-50">
-        <label>*Telefone com DDD</label>
-        <input type="tel" required>
-      </div>
+  <div class="fundo" id="fundo">
+    <div class="main">
+      <h2>Se interessou nos nossos dispositivos? <br> Preencha o formulário abaixo e faça o seu orçamento!</h2>
 
-      <div class="col-50">
-        <label>*Dispositivo</label>
-        <select required>
-          <option value="">Selecione o dispositivo</option>
-          <option value="high-end">Computador Cluster Intel i9-14900, GeForce RTX 5080 Gigabyte 16GB, 16GB DDR5, SSD M.2
-            1TB</option>
-          <option value="mid-end">Computador Pichau Intel I5-13400F, GeForce RTX 4060 MSI 8GB, 8GB DDR4, SSD M.2 512GB
-          </option>
-          <option value="low-end">Computador Mancer Intel i5-10400F, GeForce RTX 3060 Heimdall 12GB, 8GB DDR4, SSD M.2
-            512GB
-          </option>
-        </select>
-      </div>
-      <div class="col-50">
-        <label>*Quantidade Solicitada</label>
-        <input type="number" required id="quantidade" min="1">
-      </div>
+      <form id="orcamentoForm">
+        <div class="content01">
+          <label>*Nome Completo</label>
+          <input type="text" required>
+        </div>
+        <div class="content01">
+          <label>*Pessoa Física ou Jurídica?</label>
+          <select required>
+            <option value="">Inserir resposta</option>
+            <option value="Física">Pessoa Física</option>
+            <option value="Jurídica">Pessoa Jurídica</option>
+          </select>
+        </div>
 
-      <div class="col-50">
-        <label>*Pacote desejado</label>
-        <select required id="pacote">
-          <option value="">Selecione o pacote</option>
-          <option value="Individual">Padote individual - Home & Play</option>
-          <option value="Empresarial">Empresarial - Small & Medium Business</option>
-          <option value="Corporativo">Corporativo - Enterprise Solutions</option>
-        </select>
-      </div>
+        <div class="content01">
+          <label>*E-mail</label>
+          <input type="email" required>
+        </div>
+        <div class="content01">
+          <label>*Telefone com DDD</label>
+          <input type="tel" required>
+        </div>
 
-      <div style="flex: 1 1 100%;">
-        <label>Observação</label>
-        <textarea placeholder="Insira uma observação..."></textarea>
-      </div>
+        <div class="content01">
+          <label>*Dispositivo</label>
+          <select required>
+            <option value="">Selecione o dispositivo</option>
+            <option value="high-end">Computador Cluster Intel i9-14900, GeForce RTX 5080 Gigabyte 16GB, 16GB DDR5, SSD
+              M.2
+              1TB</option>
+            <option value="mid-end">Computador Pichau Intel I5-13400F, GeForce RTX 4060 MSI 8GB, 8GB DDR4, SSD M.2 512GB
+            </option>
+            <option value="low-end">Computador Mancer Intel i5-10400F, GeForce RTX 3060 Heimdall 12GB, 8GB DDR4, SSD M.2
+              512GB
+            </option>
+          </select>
+        </div>
+        <div class="content01">
+          <label>*Quantidade Solicitada</label>
+          <input type="number" required id="quantidade" min="1">
+        </div>
 
-  <div class="acoes" id="cont2">
-    <div class="esq">
-      <button type="submit" class="btn" class="butt">Solicitar orçamento</button>
+        <div class="content01">
+          <label>*Pacote desejado</label>
+          <select required id="pacote">
+            <option value="">Selecione o pacote</option>
+            <option value="Individual">Padote individual - Home & Play</option>
+            <option value="Empresarial">Empresarial - Small & Medium Business</option>
+            <option value="Corporativo">Corporativo - Enterprise Solutions</option>
+          </select>
+        </div>
+
+        <div style="flex: 1 1 100%;">
+          <label>Observação</label>
+          <textarea placeholder="Insira uma observação..."></textarea>
+        </div>
+
+        <div class="acoes" id="cont2">
+          <div class="esq">
+            <button type="submit" class="butt">Solicitar orçamento</button>
       </form>
     </div>
 
@@ -88,18 +117,62 @@
       <img src="./IMG/Forms/FormaPagamento.png" alt="Formas de Pagamento" style="max-width: 200px;" class="formpag">
     </div>
   </div>
-</div>
+  </div>
   <div class="popup" id="popup">
     <img src="./IMG/Forms/PopUp.png" alt="Orçamento Solicitado">
   </div>
   </div>
+  </div>
 
-<footer>
+  <footer id="footer-empresa">
+    <h3 id="titulo-sobre">Sobre nós</h3>
+    <h3 id="titulo-parceria">Parcerias</h3>
+    <h3 id="titulo-Contato">Contatos</h3>
 
+    <div id="item-1">
+      <p>Nossa missão é facilitar o acesso a tecnologia, tanto para uso doméstico quanto empresarial, com suporte
+        técnico 24 horas. Continuamos a inovar e expandir nossos serviços, acreditando que a tecnologia é uma ferramenta
+        de inclusão. A cada computador alugado, nos aproximamos da nossa visão de um mundo onde a tecnologia é acessível
+        a todos.</p>
 
+    </div>
 
-</footer>
+    <div id="item-2">
+      <ul style="list-style-type: none;">
+        <li><img src="./IMG/Ícones/18.png" alt="" class="TOTVS"></li>
+        <li><img src="./IMG/Ícones/19.png" alt="" class="IOS"></li>
+        <li><img src="./IMG/Ícones/21.png" alt="" class="SP"></li>
+      </ul>
+    </div>
 
+    <div id="item-3">
+      <a href="https://ios.org.br/" target="_blank">
+        <img src="./IMG/Ícones/1.png" alt="" class="rede-social"> </a>
+      <a href="https://ios.org.br/" target="_blank">
+        <img src="./IMG/Ícones/9.png" alt="" class="rede-social"> </a>
+      <a href="https://ios.org.br/" target="_blank">
+        <img src="./IMG/Ícones/11.png" alt="" class="rede-social"> </a>
+      <a href="https://ios.org.br/" target="_blank">
+        <img src="./IMG/Ícones/3.png" alt="" class="rede-social"> </a>
+      <a href="https://ios.org.br/" target="_blank">
+        <img src="./IMG/Ícones/5.png" alt="" class="rede-social"> </a>
+      <a href="https://ios.org.br/" target="_blank">
+        <img src="./IMG/Ícones/7.png" alt="" class="rede-social"> </a>
+    </div>
+
+    <div id="item-4">
+      <img src="./IMG/Logo/LogoBranco.png" alt="Logo da empresa" class="logofoot">
+      <div>
+        <p>&copy; EasyWare 2025</p>
+        <p>CNPJ: 47.999.861/0001-99 EasyWare - Av. Gen. Ataliba Leonel, 245 - Santana, São Paulo - SP, 02033-000</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
   <script src="JS/form.js"></script>
 </body>
+
 </html>
