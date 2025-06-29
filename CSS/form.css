@@ -5,10 +5,31 @@
   padding-bottom: 5%;
 }
 
+@media (max-width: 772px) {
+  .fundo {
+    padding-top: 25%;
+  }
+}
+
+@media (max-width: 430px) {
+  .fundo {
+    padding-top: 35%;
+  }
+}
+
 .main {
   max-width: 70vw;
   margin: 0 auto;
   color: white;
+}
+
+@media (max-width: 430px) {
+.main {
+  max-width: 80vw;
+  margin: 0 auto;
+  color: white;
+  background-color: #454647;
+}
 }
 
 h2 {

@@ -29,7 +29,7 @@ header {
 
 @media (max-width: 772px) {
   .navbar-brand img {
-    height: 12vw;
+    height: 10vw;
     width: auto;
     padding-left: 10%;
   }

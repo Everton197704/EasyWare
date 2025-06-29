@@ -12,6 +12,13 @@
     flex-direction: row;
     height: 100vh;
     flex-wrap: wrap;
+    padding-top: 5%;
+  }
+
+  @media (max-width: 772px) {
+    body {
+      padding-top: 15%;
+    }
   }
   
   /* Lado esquerdo com os formulários */
