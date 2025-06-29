@@ -15,6 +15,10 @@
 
 <body>
 
+<header>
+
+</header>
+
   <div class="container">
     <h2>Se interessou nos nossos dispositivos? <br> Preencha o formulário abaixo e faça o seu orçamento!</h2>
 
@@ -37,7 +41,7 @@
         <input type="email" required>
       </div>
       <div class="col-50">
-        <label>*Telefone</label>
+        <label>*Telefone com DDD</label>
         <input type="tel" required>
       </div>
 
@@ -45,18 +49,27 @@
         <label>*Dispositivo</label>
         <select required>
           <option value="">Selecione o dispositivo</option>
-          <option value=""></option>
+          <option value="high-end">Computador Cluster Intel i9-14900, GeForce RTX 5080 Gigabyte 16GB, 16GB DDR5, SSD M.2
+            1TB</option>
+          <option value="mid-end">Computador Pichau Intel I5-13400F, GeForce RTX 4060 MSI 8GB, 8GB DDR4, SSD M.2 512GB
+          </option>
+          <option value="low-end">Computador Mancer Intel i5-10400F, GeForce RTX 3060 Heimdall 12GB, 8GB DDR4, SSD M.2
+            512GB
+          </option>
         </select>
       </div>
       <div class="col-50">
-        <label>*Qtd Solicitada</label>
-        <input type="number" required>
+        <label>*Quantidade Solicitada</label>
+        <input type="number" required id="quantidade" min="1">
       </div>
 
       <div class="col-50">
         <label>*Pacote desejado</label>
-        <select required>
+        <select required id="pacote">
           <option value="">Selecione o pacote</option>
+          <option value="Individual">Padote individual - Home & Play</option>
+          <option value="Empresarial">Empresarial - Small & Medium Business</option>
+          <option value="Corporativo">Corporativo - Enterprise Solutions</option>
         </select>
       </div>
 
@@ -65,23 +78,28 @@
         <textarea placeholder="Insira uma observação..."></textarea>
       </div>
 
+  <div class="acoes" id="cont2">
+    <div class="esq">
+      <button type="submit" class="btn" class="butt">Solicitar orçamento</button>
+      </form>
+    </div>
 
-      <div class="acoes">
-        <div>
-          <button type="submit" class="btn" class="butt">Solicitar orçamento</button>
-  </form>
-        </div>
-
-        <div class="pagamento">
-          <img src="./IMG/Forms/FormaPagamento.png" alt="Formas de Pagamento" style="max-width: 200px;" class="formpag">
-        </div>
-      </div>
-
-  <div class="popup" id="popup">
-    <img src="/mnt/data/PopUp.png" alt="Orçamento Solicitado">
+    <div class="dir">
+      <img src="./IMG/Forms/FormaPagamento.png" alt="Formas de Pagamento" style="max-width: 200px;" class="formpag">
+    </div>
   </div>
+</div>
+  <div class="popup" id="popup">
+    <img src="./IMG/Forms/PopUp.png" alt="Orçamento Solicitado">
+  </div>
+  </div>
+
+<footer>
+
+
+
+</footer>
 
   <script src="JS/form.js"></script>
 </body>
-
 </html>
