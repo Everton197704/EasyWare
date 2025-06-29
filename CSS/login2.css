@@ -17,13 +17,13 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 100v;
+  height: auto;
 }
 
 /* Lado esquerdo - formulários */
 .form-area {
   background-color: #4a9eca;
-  padding: 80px 100px;
+  padding: 150px 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
