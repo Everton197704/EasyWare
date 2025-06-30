@@ -57,10 +57,10 @@ label {
   font-style: normal;
 }
 
-input,
+.botaoForm,
 select,
 textarea,
-button {
+.butt {
   width: 100%;
   padding: 10px;
   border-radius: 10px;
