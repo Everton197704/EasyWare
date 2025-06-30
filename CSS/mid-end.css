@@ -32,6 +32,10 @@ h2 {
   color: #ffffff;
 }
 
+.sugestoes_item:hover{
+  transform: scale(1.05);
+}
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-image: none; /* Remove o ícone padrão */
